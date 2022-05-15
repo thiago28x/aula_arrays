@@ -1,3 +1,4 @@
+
 const personagens = [
     {
         nome: 'Luke Skywalker',
@@ -7,7 +8,7 @@ const personagens = [
         genero: 'masculino',
     },
     {
-        nome: 'Darth Vader',
+        nome: 'Banana Vader',
         altura: '202',
         peso: '136',
         cor_olhos: 'amarelo',
@@ -21,10 +22,35 @@ const personagens = [
         genero: 'feminino',
     },
     {
-        nome: 'Anakin Skywalker',
+        nome: 'Anakin Skywalker fulana da silva',
         altura: '188',
         peso: '84',
         cor_olhos: 'azul',
         genero: 'masculino',
     },
 ];
+
+
+// cria um novo array com map, vamos separar apenas os nomes dos personagens
+const nomes = personagens.map((item) => item.nome );
+console.log("Nossos personagens: " + nomes)
+
+
+
+// cria um novo array, com apenas as alturas dos personagens
+const alturas = personagens.map((item) => item.altura );
+console.log("Nossos personagens: " + alturas)
+
+// criar novo array, só que de objetos
+const resumido = personagens.map((item) => ({
+  nome: item.nome,
+  cor_dos_olhos: item.cor_olhos
+}));
+                                 
+console.log(resumido);
+
+//retorna apenas o Primeiro nome de cada personagem
+const primeirosNomes = personagens.map((item) =>
+   item.nome.split(' ')[1]);
+
+console.log(primeirosNomes)
