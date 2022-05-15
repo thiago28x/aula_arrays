@@ -1,27 +1,27 @@
 const personagens = [
     {
-        name: 'Luke Skywalker',
+        nome: 'Luke Skywalker',
         altura: '172',
         peso: '77',
         cor_olhos: 'azul',
         genero: 'masculino',
     },
     {
-        name: 'Darth Vader',
+        nome: 'Darth Vader',
         altura: '202',
         peso: '136',
         cor_olhos: 'amarelo',
         genero: 'masculino',
     },
     {
-        name: 'Leia Organa',
+        nome: 'Leia Organa',
         altura: '150',
         peso: '49',
         cor_olhos: 'castanho',
         genero: 'feminino',
     },
     {
-        name: 'Anakin Skywalker',
+        nome: 'Anakin Skywalker',
         altura: '188',
         peso: '84',
         cor_olhos: 'azul',
